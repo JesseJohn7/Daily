@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Goals Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div id="timeLocation">
+            <span id="currentTime"></span>
+            <span id="currentLocation"></span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h1 id="greeting"></h1>
+            <div id="inputSection">
+                <input type="text" id="userName" placeholder="Enter your name">
+                <button onclick="setName()">Submit</button>
+            </div>
+            <div id="goalSection" style="display:none;">
+                <h2>What’s your main goal for today?</h2>
+                <input type="text" id="userGoal" placeholder="Enter your goal">
+                <button onclick="addGoal()">Add Goal</button>
+            </div>
+            <section id="goalsList">
+                <!-- Goals will be dynamically added here -->
+            </section>
+            <section id="motivationalQuote">
+                <!-- Motivational quote will be refreshed here -->
+            </section>
+        </div>
+    </div>
+</body>
+</html>

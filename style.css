@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('./Egyptian\ Evening.jpg'); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #000000;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 60px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], button {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2d3c7e;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3552b3;
+}
+
+button:active {
+    background-color: #3552b3;
+}
+
+
+#goalsList, #motivationalQuote {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#goalsList .goal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.goal.completed {
+    background-color: rgba(33, 109, 36, 0.7);
+}
+
+#motivationalQuote {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin-top: 40px;
+    }
+
+    nav {
+        padding: 5px 10px;
+    }
+
+    input[type="text"], button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #goalsList, #motivationalQuote {
+        padding: 10px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"], button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    #goalsList, #motivationalQuote {
+        padding: 8px;
+        margin-top: 10px;
+    }
+}
